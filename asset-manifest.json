@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rugs4radar/static/css/main.073c9b0a.css",
+    "main.js": "/rugs4radar/static/js/main.d161400a.js",
+    "static/js/787.be91704c.chunk.js": "/rugs4radar/static/js/787.be91704c.chunk.js",
+    "static/media/logo.svg": "/rugs4radar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rugs4radar/index.html",
+    "main.073c9b0a.css.map": "/rugs4radar/static/css/main.073c9b0a.css.map",
+    "main.d161400a.js.map": "/rugs4radar/static/js/main.d161400a.js.map",
+    "787.be91704c.chunk.js.map": "/rugs4radar/static/js/787.be91704c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d161400a.js"
+  ]
+}
