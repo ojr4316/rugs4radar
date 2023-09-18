@@ -1,0 +1,32 @@
+.fourUp {
+    width: 40vmax;
+}
+
+.fourUp-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.fourUp-date {
+    color: var(--white);
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 32px;
+}
+
+.fourUp-header {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.fourUp-cell {
+    border: 2px solid var(--white);
+    padding: 16px;
+}
+
+.fourUp-text {
+    font-size: 18px;
+    color: var(--white);
+}

@@ -1,0 +1,32 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.team-member {
+    color: var(--white);
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.team-member h4{
+    font-size: 20px;
+    color: var(--green);
+}

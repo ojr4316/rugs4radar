@@ -1,0 +1,21 @@
+.post {
+  width: 40vmax;
+  padding-bottom: 64px;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.post-text {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.post-date {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+}
