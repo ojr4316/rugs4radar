@@ -104,7 +104,7 @@ export default function Week() {
       {currentFourUp}
       {buildHours(getRecentHours(hours))}
       {buildHours(getTotalHours(hours), "Total Hours")}
-      <button onClick={updateHours} className="hours-button">Update Hours</button>
+      <button onClick={updateHours} className="hours-button">Update Hours*</button>
       <p className="hours-note">
         * We are using a free API to pull our hour data from a Google Sheet.
         (Please don't refresh a lot!)

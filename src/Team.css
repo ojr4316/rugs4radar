@@ -31,3 +31,31 @@
     font-size: 20px;
     color: var(--green);
 }
+
+@media only screen and (max-width: 1000px) {
+    .team {
+        margin-top: 8px;
+        align-items: left;
+        width: 80%;
+    }
+
+    .team-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        object-fit: cover;
+        margin-right: 16px;
+    }
+
+    .team-member {
+        margin-bottom: 32px;
+    }
+    
+    .team-member h3 {
+        font-size: 20px;
+    }
+    
+    .team-member h4{
+        font-size: 16px;
+    }
+}

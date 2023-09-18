@@ -12,7 +12,9 @@
 
 .hours-note {
     color: var(--white);
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
 }
 
 .hours-button {

@@ -53,3 +53,18 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 1000px) {
+  .nav, .nav-options {
+    flex-direction: column;
+  }
+
+  .nav-options {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .nav-options p {
+    padding: 12px 0;
+  }
+}
