@@ -11,12 +11,15 @@ function getPageContents(page: string) {
         <div style={{ width: "40%", marginTop: "32px" }}>
           <p className="page-title">Project Description</p>
           <p className="page-text">
+            Our project with D3 engineering has a MVP the scope of it is as
+            follows:
+          </p>
+          <p className="page-text">
             1) The TDA4VM board from Texas Instruments is confirmed to work with
-            ROS Our project with D3 engineering has a MVP the scope of it is as
-            follows: 2. Our first task is to follow the documentation to
-            replicate this set up. The most general overview of this system is
-            the TI board running ROS 2 and an external PC also running ROS 2.
-            These 2 communicate through SSH.
+            ROS 2. Our first task is to follow the documentation to replicate
+            this set up. The most general overview of this system is the TI
+            board running ROS 2 and an external PC also running ROS 2. These 2
+            communicate through SSH.
           </p>
           <p className="page-text">
             2) The functionality of system using the TI board needs to be
