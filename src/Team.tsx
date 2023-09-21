@@ -14,7 +14,7 @@ export default function Team() {
         <img src={require("./images/owen.JPG")} alt="" className="team-image" />
         <div>
           <h3>Owen Racette</h3>
-          <h4>Project Manager - Site Developer </h4>
+          <h4>Project Manager </h4>
         </div>
       </div>
       <div className="team-member">
@@ -35,7 +35,7 @@ export default function Team() {
         <img src={require("./images/placeholder.png")} alt="" className="team-image" />
         <div>
           <h3>Zachary Eckhardt</h3>
-          <h4>Notetaker</h4>
+          <h4>Documentation</h4>
         </div>
       </div>
     </div>
