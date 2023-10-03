@@ -10,31 +10,33 @@ function getPageContents(page: string) {
       return (
         <div style={{ width: "40%", marginTop: "32px" }}>
           <p className="page-title">Project Description</p>
+
           <p className="page-text">
-            Our project with D3 engineering has a MVP the scope of it is as
-            follows:
+            Our project concerns enabling the Robot Operating System (ROS 2) to
+            run on a new robotics motherboard produced by D3 Engineering. To
+            begin, the TDA4VM board from Texas Instruments must be confirmed to
+            work with ROS.
           </p>
           <p className="page-text">
-            1) The TDA4VM board from Texas Instruments is confirmed to work with
-            ROS 2. Our first task is to follow the documentation to replicate
-            this set up. The most general overview of this system is the TI
-            board running ROS 2 and an external PC also running ROS 2. These 2
-            communicate through SSH.
+            Our first task is to follow the documentation to replicate this set
+            up. The most general overview of this system is the TI board running
+            ROS 2 for data acquisition and direct robot control and an external
+            PC also running ROS 2 for visualization and remote control. These
+            two systems will communicate via SSH. The functionality of the
+            system using TI's board should be documented so the behavior can be
+            replicated in the future. D3's proprietary board uses the same
+            processor on a different circuit board, so this information will
+            enable the development of an MVP.
           </p>
           <p className="page-text">
-            2) The functionality of system using the TI board needs to be
-            documented so that the behavior can be replicated latter on.
+            The MVP of our project with D3 Engineering is as follows: ROS 2 and
+            the Robotics SDK from TI must both function and be able to read
+            input/output from the D3 proprietary board. To do this, a custom
+            deployment pipeline for the proprietary board will be necessary.
           </p>
           <p className="page-text">
-            3) D3's product uses the same micro chip as the TI board but the pcb
-            is different. The functionally of the system when using the TI board
-            needs to be replicated on the system when using the D3 board. To do
-            this a branch of ROS 2 will be made.
-          </p>
-          <p className="page-text">
-            There are more goals in the project but replicating the behavior of
-            the TI board for the D3 board is the MVP of the project and they
-            will be addressed at a later date if at all.
+            If the MVP is achieved, we plan to validate the MVP by enabling
+            video and radar readout to an external controller.
           </p>
 
           <p className="page-title" style={{ marginTop: "48px" }}>
