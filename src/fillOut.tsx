@@ -31,14 +31,27 @@ export const week3: fourUp = {
 };
 
 export const week4: fourUp = {
-  for: new Date("9/19/23"),
-  progress: [""],
-  risks: [],
-  plans: [],
-  needs: [],
+  for: new Date("9/26/23"),
+  progress: [
+    "Domain model and other project artifacts ready for review",
+    "Acquired hardware",
+    "Finished establishing roles",
+    "Established sprint plan on Jira",
+  ],
+  risks: [
+    "Lack of experience",
+    "Still unclear about technical challenge (relating to OS)",
+    "Unable to get Intel wireless card functional",
+  ],
+  plans: ["Initial hardware tests", "Final planning"],
+  needs: [
+    "SD Cards",
+    "More Intel Wifi Cards",
+    "Input devices - camera and radar",
+  ],
 };
 
-export const currentFourUp = <FourUp data={week3} />;
+export const currentFourUp = <FourUp data={week4} />;
 
 export function getRecentHours(hrs: any) {
   let currentWeek = 15;
@@ -70,7 +83,7 @@ export function getTotalHours(hrs: any) {
   return hours;
 }
 
-export function buildHours(hours: any, label="Recent Hours") {
+export function buildHours(hours: any, label = "Recent Hours") {
   let tsx = [<p className="hours-label">{label}</p>];
   for (let h in hours) {
     if (hours[h] > 0) {
@@ -80,11 +93,7 @@ export function buildHours(hours: any, label="Recent Hours") {
         </p>
       );
     } else {
-      tsx.push(
-        <p className="hours-text">
-          {h} - None this week
-        </p>
-      );
+      tsx.push(<p className="hours-text">{h} - None this week</p>);
     }
   }
   return tsx;
@@ -93,6 +102,15 @@ export function buildHours(hours: any, label="Recent Hours") {
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>
+  <Post
+      data={{
+        date: new Date("9/24/23"),
+        image: require("./images/domain.png"),
+        description:
+          "Our first attempt at creating a domain model for the project. ",
+      }}
+    />
+    <FourUp data={week4} />
     <Post
       data={{
         date: new Date("9/16/23"),
