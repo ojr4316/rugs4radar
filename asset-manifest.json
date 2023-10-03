@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rugs4radar/static/css/main.1288d50d.css",
-    "main.js": "/rugs4radar/static/js/main.8b0f8d1e.js",
-    "static/media/owen.JPG": "/rugs4radar/static/media/owen.f5d52ef287180925fa35.JPG",
+    "main.css": "/rugs4radar/static/css/main.5b06db15.css",
+    "main.js": "/rugs4radar/static/js/main.b434218d.js",
     "static/media/hardware.png": "/rugs4radar/static/media/hardware.a01d4b842679151ecf76.png",
+    "static/media/domain.png": "/rugs4radar/static/media/domain.e9339b15fc0678d7a23e.png",
     "index.html": "/rugs4radar/index.html",
-    "main.1288d50d.css.map": "/rugs4radar/static/css/main.1288d50d.css.map",
-    "main.8b0f8d1e.js.map": "/rugs4radar/static/js/main.8b0f8d1e.js.map"
+    "main.5b06db15.css.map": "/rugs4radar/static/css/main.5b06db15.css.map",
+    "main.b434218d.js.map": "/rugs4radar/static/js/main.b434218d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1288d50d.css",
-    "static/js/main.8b0f8d1e.js"
+    "static/css/main.5b06db15.css",
+    "static/js/main.b434218d.js"
   ]
 }
