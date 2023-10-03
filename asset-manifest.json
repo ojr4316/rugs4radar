@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rugs4radar/static/css/main.5b06db15.css",
-    "main.js": "/rugs4radar/static/js/main.b434218d.js",
+    "main.js": "/rugs4radar/static/js/main.b9656759.js",
     "static/media/hardware.png": "/rugs4radar/static/media/hardware.a01d4b842679151ecf76.png",
     "static/media/domain.png": "/rugs4radar/static/media/domain.e9339b15fc0678d7a23e.png",
     "index.html": "/rugs4radar/index.html",
     "main.5b06db15.css.map": "/rugs4radar/static/css/main.5b06db15.css.map",
-    "main.b434218d.js.map": "/rugs4radar/static/js/main.b434218d.js.map"
+    "main.b9656759.js.map": "/rugs4radar/static/js/main.b9656759.js.map"
   },
   "entrypoints": [
     "static/css/main.5b06db15.css",
-    "static/js/main.b434218d.js"
+    "static/js/main.b9656759.js"
   ]
 }
