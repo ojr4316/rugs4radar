@@ -6,7 +6,8 @@ export type PostType = {
   description: string;
   image?: string;
 };
-
+//make new 4up object
+//
 export type fourUp = {
   for: Date;
   progress: string[];
@@ -50,7 +51,7 @@ export const week4: fourUp = {
     "Input devices - camera and radar",
   ],
 };
-
+//update this line
 export const currentFourUp = <FourUp data={week4} />;
 
 export function getRecentHours(hrs: any) {
@@ -98,7 +99,7 @@ export function buildHours(hours: any, label = "Recent Hours") {
   }
   return tsx;
 }
-
+//add news to the top
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>

@@ -6,7 +6,7 @@ import {
 } from "./fillOut";
 import { useState } from "react";
 import "./Hours.css";
-
+//go to the current week, hit update hours, inspect, console, copy the object and paste it here
 const cacheHours: any = [
   {
     "3": "6",
