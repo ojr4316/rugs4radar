@@ -69,7 +69,7 @@ export const week8: fourUp = {
 };
 
 //update this line with the most recent fourup as its data
-export const currentFourUp = <FourUp data={week4} />;
+export const currentFourUp = <FourUp data={week8} />;
 
 
 /* Contains ALL resources made, four ups, and project updates */
