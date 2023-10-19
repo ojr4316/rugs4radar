@@ -51,6 +51,22 @@ export const week4: fourUp = {
     "Input devices - camera and radar",
   ],
 };
+
+
+export const week8: fourUp = {
+  for: new Date("10/23/23"),
+  progress: [
+    "Built Image",
+    "Wrote instructions on how to build Image"
+  ],
+  risks: [
+    "Lack of experience"
+  ],
+  plans: [],
+  needs: [
+  ],
+};
+
 //update this line
 export const currentFourUp = <FourUp data={week4} />;
 
@@ -103,6 +119,14 @@ export function buildHours(hours: any, label = "Recent Hours") {
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>
+  <Post
+      data={{
+        date: new Date("10/18/23"),
+        image: require("./images/TIBoardImage.png"),
+        description:
+          "Built TI Image",
+      }}
+    />
   <Post
       data={{
         date: new Date("9/24/23"),
