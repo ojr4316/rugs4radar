@@ -1,5 +1,7 @@
 .fourUp {
-    width: 30vmax;
+    max-width: 70%;
+    min-width: 30vw;
+    margin-bottom: 32px;
 }
 
 .fourUp-grid {
@@ -31,8 +33,16 @@
     color: var(--white);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .fourUp {
         width: 80%;
+    }
+
+    .fourUp-text {
+        font-size: 14px;
+    }
+
+    .fourUp-header {
+        font-size: 20px;
     }
 }

@@ -8,7 +8,7 @@ function getPageContents(page: string) {
   switch (page) {
     case "home":
       return (
-        <div style={{ width: "40%", marginTop: "32px" }}>
+        <div style={{ width: "80%", maxWidth: "600px", marginTop: "16px" }}>
           <p className="page-title">Project Description</p>
 
           <p className="page-text">

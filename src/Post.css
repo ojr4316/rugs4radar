@@ -1,11 +1,12 @@
 .post {
-  width: 40vmax;
-  margin: 64px 0;
+  max-width: 500px;
+  margin-bottom: 32px;
 }
 
 .post-image {
   width: 100%;
-  max-height: 100%;
+  max-height: 500px;
+  object-fit: contain
 }
 
 .post-text {
@@ -15,7 +16,8 @@
 
 .post-date {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 14px;
+  opacity: 0.7;
   color: var(--white);
-  text-align: center;
+  text-align: left;
 }

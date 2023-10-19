@@ -1,13 +1,13 @@
 import FourUp from "./FourUp";
 import Post from "./Post";
 
+// Types of "posts" on website, either a text/image post, or a Fourup
 export type PostType = {
   date: Date;
   description: string;
   image?: string;
 };
-//make new 4up object
-//
+
 export type fourUp = {
   for: Date;
   progress: string[];
@@ -16,6 +16,7 @@ export type fourUp = {
   needs: string[];
 };
 
+//make new 4up object each week
 export const week3: fourUp = {
   for: new Date("9/12/23"),
   progress: ["Had first meeting with sponsor, went over project overview."],
@@ -67,58 +68,14 @@ export const week8: fourUp = {
   ],
 };
 
-//update this line
+//update this line with the most recent fourup as its data
 export const currentFourUp = <FourUp data={week4} />;
 
-export function getRecentHours(hrs: any) {
-  let currentWeek = 15;
-  console.log(hrs[0][currentWeek]);
-  while (!hrs[0][currentWeek]) {
-    currentWeek--;
-  }
 
-  let hours: any = {};
-  hrs.forEach((c: any) => {
-    const name = c.Week;
-    hours[name] = c[currentWeek.toString()];
-  });
-  return hours;
-}
-
-export function getTotalHours(hrs: any) {
-  let hours: any = {};
-  hrs.forEach((c: any) => {
-    const name = c.Week;
-    let total = 0;
-    for (let week in c) {
-      if (week !== "Week" && c[week]) {
-        total += parseFloat(c[week]);
-      }
-    }
-    hours[name] = total;
-  });
-  return hours;
-}
-
-export function buildHours(hours: any, label = "Recent Hours") {
-  let tsx = [<p className="hours-label">{label}</p>];
-  for (let h in hours) {
-    if (hours[h] > 0) {
-      tsx.push(
-        <p className="hours-text">
-          {h} - {hours[h]} hours
-        </p>
-      );
-    } else {
-      tsx.push(<p className="hours-text">{h} - None this week</p>);
-    }
-  }
-  return tsx;
-}
-//add news to the top
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>
+  {/* Add news under here */}
   <Post
       data={{
         date: new Date("10/18/23"),
@@ -147,3 +104,87 @@ export const news = (
     <FourUp data={week3} />
   </>
 );
+
+//go to the current week, hit update hours, inspect, console, copy the object and paste it here
+export const cacheHours: any = [
+  {
+    "3": "6",
+    "4": "8",
+    "5": "2",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Samantha"
+  },
+  {
+    "3": "9",
+    "4": "9",
+    "5": "7",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Owen"
+  },
+  {
+    "3": "6",
+    "4": "10",
+    "5": "10",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Ash"
+  },
+  {
+    "3": "7",
+    "4": "7",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Will"
+  },
+  {
+    "3": "5",
+    "4": "6",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Zach"
+  }
+];
