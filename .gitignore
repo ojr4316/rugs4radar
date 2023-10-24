@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #scripts
-*.bin
+src/ti-board
+!*.bin
