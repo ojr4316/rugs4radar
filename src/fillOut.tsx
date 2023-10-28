@@ -53,6 +53,22 @@ export const week4: fourUp = {
   ],
 };
 
+export const week9: fourUp = {
+  for: new Date("10/30/23"),
+  progress: ["Partially done build script"],
+  risks: [
+    "Build is not working",
+    "1 person's computer cannot run build scripts"
+  ],
+  plans: [
+    "Continue working on build issues",
+    "build script"
+  ],
+  needs: [
+    "D3 cables",
+    "pinmux spreadsheet"
+  ],
+};
 
 export const week8: fourUp = {
   for: new Date("10/23/23"),
@@ -68,7 +84,7 @@ export const week8: fourUp = {
 };
 
 //update this line with the most recent fourup as its data
-export const currentFourUp = <FourUp data={week8} />;
+export const currentFourUp = <FourUp data={week9} />;
 
 
 /* Contains ALL resources made, four ups, and project updates */
