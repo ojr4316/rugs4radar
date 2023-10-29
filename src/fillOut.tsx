@@ -93,6 +93,13 @@ export const news = (
   {/* Add news under here */}
   <Post
       data={{
+        date: new Date("10/28/23"),
+        description:
+          "Updated gitignore to allow for only the non auto generated files of the shell script to be comitted."
+      }}
+    />
+  <Post
+      data={{
         date: new Date("10/18/23"),
         image: require("./images/TIBoardImage.png"),
         description:
