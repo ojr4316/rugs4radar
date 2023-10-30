@@ -23,5 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 #scripts
-src/ti-board
-!*.bin
+**/src/vision-sdk/*
+!**/src/vision-sdk/bin
+
+**/src/vision-sdk/bin/*
+!**/src/vision-sdk/**/*auto.sh
