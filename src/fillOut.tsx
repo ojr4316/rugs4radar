@@ -53,22 +53,6 @@ export const week4: fourUp = {
   ],
 };
 
-export const week9: fourUp = {
-  for: new Date("10/30/23"),
-  progress: ["Partially done build script"],
-  risks: [
-    "Build is not working",
-    "1 person's computer cannot run build scripts"
-  ],
-  plans: [
-    "Continue working on build issues",
-    "build script"
-  ],
-  needs: [
-    "D3 cables",
-    "pinmux spreadsheet"
-  ],
-};
 
 export const week8: fourUp = {
   for: new Date("10/23/23"),
@@ -76,10 +60,28 @@ export const week8: fourUp = {
     "Built Image",
     "Wrote instructions on how to build Image"
   ],
-  risks: [ "Some of us are not caught up due to hardware problems"
+  risks: [
+    "Lack of experience"
   ],
-  plans: ["Make sure everyone is caught up before going forward"],
+  plans: ["Create a fully functional build", "Get all teammates to build an image"],
   needs: [
+    "N/A"
+  ],
+};
+
+export const week9: fourUp = {
+  for: new Date("10/31/23"),
+  progress: [
+    "2 team members were able to create a semi-working build",
+    "Revised build instructions"
+  ],
+  risks: [
+    "Lack of experience with OS building",
+    "Member-specific errors and build problems"
+  ],
+  plans: ["Create a fully functional build", "Catch up teammates on image building steps"],
+  needs: [
+    "N/A"
   ],
 };
 
@@ -91,13 +93,8 @@ export const currentFourUp = <FourUp data={week9} />;
 export const news = (
   <>
   {/* Add news under here */}
-  <Post
-      data={{
-        date: new Date("10/28/23"),
-        description:
-          "Updated gitignore to allow for only the non auto generated files of the shell script to be comitted."
-      }}
-    />
+  <FourUp data={week9} />
+  <FourUp data={week8} />
   <Post
       data={{
         date: new Date("10/18/23"),
@@ -130,83 +127,83 @@ export const news = (
 //go to the current week, hit update hours, inspect, console, copy the object and paste it here
 export const cacheHours: any = [
   {
-      "3": "6",
-      "4": "8",
-      "5": "2",
-      "6": "3",
-      "7": "9",
-      "8": "7",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "Week": "Samantha"
+    "3": "6",
+    "4": "8",
+    "5": "2",
+    "6": "3",
+    "7": "9",
+    "8": "7",
+    "9": "6",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Samantha"
   },
   {
-      "3": "9",
-      "4": "9",
-      "5": "10",
-      "6": "6",
-      "7": "12",
-      "8": "5",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "Week": "Owen"
+    "3": "9",
+    "4": "9",
+    "5": "10",
+    "6": "6",
+    "7": "12",
+    "8": "8",
+    "9": "6",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Owen"
   },
   {
-      "3": "6",
-      "4": "10",
-      "5": "10",
-      "6": "7",
-      "7": "9",
-      "8": "2",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "Week": "Ash"
+    "3": "6",
+    "4": "10",
+    "5": "10",
+    "6": "7",
+    "7": "9",
+    "8": "5",
+    "9": "11",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Ash"
   },
   {
-      "3": "7",
-      "4": "7",
-      "5": "8",
-      "6": "8",
-      "7": "10",
-      "8": "6",
-      "9": "3",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "Week": "Will"
+    "3": "7",
+    "4": "7",
+    "5": "8",
+    "6": "8",
+    "7": "10",
+    "8": "6",
+    "9": "21",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Will"
   },
   {
-      "3": "5",
-      "4": "6",
-      "5": "3.5",
-      "6": "6",
-      "7": "8",
-      "8": "12",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "Week": "Zach"
+    "3": "5",
+    "4": "6",
+    "5": "3.5",
+    "6": "6",
+    "7": "8",
+    "8": "12",
+    "9": "6",
+    "10": "",
+    "11": "",
+    "12": "",
+    "13": "",
+    "14": "",
+    "15": "",
+    "Week": "Zach"
   }
 ];
