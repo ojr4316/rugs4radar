@@ -85,14 +85,42 @@ export const week9: fourUp = {
   ],
 };
 
+export const week10: fourUp = {
+  for: new Date("11/07/23"),
+  progress: [
+    "discovered how things are renamed in Rules.make", "Anoother member built image"
+  ],
+  risks: [
+    "found that the boot file was missing platform suffixes"
+  ],
+  plans: ["Midterm evaluation", "Continue trying to build terminal"],
+  needs: [
+    "N/A"
+  ],
+};
+
+export const week11: fourUp = {
+  for: new Date("11/14/23"),
+  progress: [],
+  risks: [
+    "The preloaded SD failed", "We do not have space to do the yocto build"
+  ],
+  plans: ["Create a fully functional build", "Catch up teammates on image building steps"],
+  needs: [
+    "Terabyte Storage devices (Preferably USB)",
+    "Board support"
+  ],
+};
+
 //update this line with the most recent fourup as its data
-export const currentFourUp = <FourUp data={week9} />;
+export const currentFourUp = <FourUp data={week11} />;
 
 
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>
   {/* Add news under here */}
+  <FourUp data={week10} />
   <FourUp data={week9} />
   <FourUp data={week8} />
   <Post
