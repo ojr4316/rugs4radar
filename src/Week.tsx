@@ -6,8 +6,7 @@ import { useState } from "react";
 import "./Hours.css";
 
 export function getRecentHours(hrs: any) {
-  let currentWeek = 15;
-  console.log(hrs[0][currentWeek]);
+  let currentWeek = 30;
   while (!hrs[0][currentWeek]) {
     currentWeek--;
   }
@@ -45,10 +44,10 @@ export function buildHours(hours: any, label = "Recent Hours") {
         </p>
       );
     } else {
-      tsx.push(<p className="hours-text">{h} - None this week</p>);
+      tsx.push(<p className="hours-text" key={h}>{h} - None this week</p>);
     }
   }
-  return tsx;
+  return tsx.map((e, i) => <div key={i}>{e}</div>);
 }
 
 export default function Week() {
