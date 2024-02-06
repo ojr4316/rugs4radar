@@ -16,22 +16,6 @@ export type fourUp = {
   needs: string[];
 };
 
-export const week20: fourUp = {
-  for: new Date("2/6/24"),
-  progress: [
-    "Got most of the process down in writing"
-  ],
-  risks: [
-    "We need to avoid all working on the same task this semester",
-    "Metrics still not sure what to measure"
-  ],
-  plans: ["Ticket Generation", "Fix Website", "Get Metrics"],
-  needs: [
-    "There was talk about more SD cards",
-    "Getting a second box would be good"
-  ],
-};
-
 //make new 4up object each week
 export const week3: fourUp = {
   for: new Date("9/12/23"),
@@ -140,7 +124,7 @@ export const week16: fourUp = {
   ],
   plans: ["Migrate to Trello", "Incorporate documenting approaches to methodology"],
   needs: ["D3 RVP pin spreadsheet"
-  ],
+],
 };
 
 export const week17: fourUp = {
@@ -156,65 +140,228 @@ export const week17: fourUp = {
   ],
   plans: ["Continue testing with working SDK build process"],
   needs: ["Meeting times with Stuart", "D3 Office availability for meetings"
+],
+};
+
+export const week19: fourUp = {
+  for: new Date("2/6/24"),
+  progress: [
+    "Got most of the process down in writing"
+  ],
+  risks: [
+    "We need to avoid all working on the same task this semester",
+    "Metrics still not sure what to measure"
+  ],
+  plans: ["Ticket Generation", "Fix Website", "Get Metrics"],
+  needs: [
+    "There was talk about more SD cards",
+    "Getting a second box would be good"
   ],
 };
 
+
 //update this line with the most recent fourup as its data
-export const currentFourUp = <FourUp data={week20} />;
+export const currentFourUp = <FourUp data={week19} />;
 
 
 /* Contains ALL resources made, four ups, and project updates */
 export const news = (
   <>
   {/* Add news under here */}
+  <FourUp data={week19} />
   <FourUp data={week17} />
   <Post
-      data={{
-        date: new Date("1/29/24"),
-        image: require("./images/TIBoardPrint.png"),
-        description:
-          "Our first verifiably modified build, shown through a print message on boot read through screen.",
-      }}
-    />
+  data={{
+    date: new Date("1/29/24"),
+    image: require("./images/TIBoardPrint.png"),
+    description:
+    "Our first verifiably modified build, shown through a print message on boot read through screen.",
+  }}
+  />
   <FourUp data={week16} />
   <FourUp data={week11} />
   <FourUp data={week10} />
   <FourUp data={week9} />
   <FourUp data={week8} />
   <Post
-      data={{
-        date: new Date("10/18/23"),
-        image: require("./images/TIBoardImage.png"),
-        description:
-          "Built TI Image",
-      }}
-    />
+  data={{
+    date: new Date("10/18/23"),
+    image: require("./images/TIBoardImage.png"),
+    description:
+    "Built TI Image",
+  }}
+  />
   <Post
-      data={{
-        date: new Date("9/24/23"),
-        image: require("./images/domain.png"),
-        description:
-          "Our first attempt at creating a domain model for the project. ",
-      }}
-    />
-    <FourUp data={week4} />
-    <Post
-      data={{
-        date: new Date("9/16/23"),
-        image: require("./images/hardware.png"),
-        description:
-          "Our first attempt at creating a diagram describing the hardware/OS setup of our project. ",
-      }}
-    />
-    <FourUp data={week3} />
+  data={{
+    date: new Date("9/24/23"),
+    image: require("./images/domain.png"),
+    description:
+    "Our first attempt at creating a domain model for the project. ",
+  }}
+  />
+  <FourUp data={week4} />
+  <Post
+  data={{
+    date: new Date("9/16/23"),
+    image: require("./images/hardware.png"),
+    description:
+    "Our first attempt at creating a diagram describing the hardware/OS setup of our project. ",
+  }}
+  />
+  <FourUp data={week3} />
   </>
-);
-
-//go to the current week, hit update hours, inspect, console, copy the object and paste it here
-export const cacheHours: any = [
-  {3: '6', 4: '8', 5: '5', 6: '6', 7: '9', 8: '7', 9: '9', 10: '6', 11: '8', 12: '6', 13: '0', 14: '7', 15: '8', 16: '0', 17: '4', 18: '5', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', Week: 'Samantha'},
-  {3: '9', 4: '9', 5: '10', 6: '6', 7: '12', 8: '8', 9: '6', 10: '8', 11: '12', 12: '6', 13: '0', 14: '6', 15: '8', 16: '3', 17: '3', 18: '', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', Week: 'Owen'},
-  {3: '6', 4: '10', 5: '10', 6: '7', 7: '9', 8: '5', 9: '11', 10: '6', 11: '8', 12: '6', 13: '0', 14: '6', 15: '8', 16: '2', 17: '3', 18: '6', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', Week: 'Ash'},
-  {3: '7', 4: '7', 5: '8', 6: '8', 7: '10', 8: '6', 9: '21', 10: '12', 11: '8', 12: '6', 13: '0', 14: '7', 15: '8', 16: '4', 17: '8', 18: '6', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', Week: 'Will'},
-  {3: '5', 4: '6', 5: '3.5', 6: '6', 7: '8', 8: '12', 9: '6', 10: '6', 11: '8', 12: '5', 13: '0', 14: '6', 15: '8', 16: '2', 17: '6', 18: '2', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', Week: 'Zach'}
-];
+  );
+  
+  //go to the current week, hit update hours, inspect, console, copy the object and paste it here
+  export const cacheHours: any =[
+    {
+      "3": "6",
+      "4": "8",
+      "5": "5",
+      "6": "6",
+      "7": "9",
+      "8": "7",
+      "9": "9",
+      "10": "6",
+      "11": "8",
+      "12": "6",
+      "13": "0",
+      "14": "7",
+      "15": "8",
+      "16": "0",
+      "17": "4",
+      "18": "5",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "Week": "Samantha"
+    },
+    {
+      "3": "9",
+      "4": "9",
+      "5": "10",
+      "6": "6",
+      "7": "12",
+      "8": "8",
+      "9": "6",
+      "10": "8",
+      "11": "12",
+      "12": "6",
+      "13": "0",
+      "14": "6",
+      "15": "8",
+      "16": "3",
+      "17": "3",
+      "18": "",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "Week": "Owen"
+    },
+    {
+      "3": "6",
+      "4": "10",
+      "5": "10",
+      "6": "7",
+      "7": "9",
+      "8": "5",
+      "9": "11",
+      "10": "6",
+      "11": "8",
+      "12": "6",
+      "13": "0",
+      "14": "6",
+      "15": "8",
+      "16": "2",
+      "17": "3",
+      "18": "6",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "Week": "Ash"
+    },
+    {
+      "3": "7",
+      "4": "7",
+      "5": "8",
+      "6": "8",
+      "7": "10",
+      "8": "6",
+      "9": "21",
+      "10": "12",
+      "11": "8",
+      "12": "6",
+      "13": "0",
+      "14": "7",
+      "15": "8",
+      "16": "4",
+      "17": "8",
+      "18": "6",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "Week": "Will"
+    },
+    {
+      "3": "5",
+      "4": "6",
+      "5": "3.5",
+      "6": "6",
+      "7": "8",
+      "8": "12",
+      "9": "6",
+      "10": "6",
+      "11": "8",
+      "12": "5",
+      "13": "0",
+      "14": "6",
+      "15": "8",
+      "16": "2",
+      "17": "6",
+      "18": "2",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "Week": "Zach"
+    }
+  ];
